@@ -64,13 +64,19 @@ function createTableFirstBlack(valueX, valueY) {
 board.onclick = function (event) {
 	var target = event.target;
 	if (target.tagName == 'DIV') {
-		changeColor(target);
+		changeColor();
 	}
 }
 
-function changeColor(div) {
+function changeColor() {
 	var allCell = document.getElementsByClassName('cell');
 	for (var i = 0; i < allCell.length; i++) {
 		allCell[i].classList.toggle('blackCell');
 	}
 }
+//или так
+// function changeColor() {
+// 	document.getElementsByClassName('cell').forEach(function (item) {
+// 		item.classList.toggle('black-cell');
+// 	});
+// }
