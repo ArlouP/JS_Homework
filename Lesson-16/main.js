@@ -47,5 +47,4 @@ function active(div) {
 	var ordinalNamber = div.getAttribute('data-tab');
 	div.classList.add('active');
 	allUsersInfo[ordinalNamber].classList.add('active')
-
 }
