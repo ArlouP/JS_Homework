@@ -10,15 +10,14 @@ var userPhoneNamber2 = '375299999999';
 var userPhoneNamber3 = '8-044-444-44-44';
 var userPhoneNamber4 = '8033-6666666';
 
-function valiNamber(number) {
+function validNamber(number) {
 	var reg = /^\+?\d{1,3}-?0?(25|44|33|17|29)-?[^\D0]\d{2}(-?\d{2}){2}$/i;
-	if (reg.test(number)) return true;
-	return false;
+	return reg.test(number);
 }
-console.log(valiNamber(userPhoneNamber1));
-console.log(valiNamber(userPhoneNamber2));
-console.log(valiNamber(userPhoneNamber3));
-console.log(valiNamber(userPhoneNamber4));
+console.log(validNamber(userPhoneNamber1));
+console.log(validNamber(userPhoneNamber2));
+console.log(validNamber(userPhoneNamber3));
+console.log(validNamber(userPhoneNamber4));
 
 // Задание 3:
 var anyWords = prompt('Введите любое слово', '');
