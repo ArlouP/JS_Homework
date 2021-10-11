@@ -1,7 +1,7 @@
 'use strict';
 // Задание 1:
 var userEmail = 'name_surname-1234@gmail.com';
-var reg = /^[a-z]{3,10}_[a-z]{3,10}(-\d{4})?@([^\W_]{2,10}(\.|-)?)[^\W_]{2,10}\.com$/i;
+var reg = /^[a-z]{3,10}_[a-z]{3,10}(-\d{4})?@([0-9a-z]{2,10}(\.|-)?)[0-9a-z]{2,10}\.com$/i;
 console.log(reg.test(userEmail));
 
 // Задание 2:
@@ -11,7 +11,7 @@ var userPhoneNamber3 = '8-044-444-44-44';
 var userPhoneNamber4 = '8033-6666666';
 
 function validNamber(number) {
-	var reg = /^\+?\d{1,3}-?0?(25|44|33|17|29)-?[^\D0]\d{2}(-?\d{2}){2}$/i;
+	var reg = /^\+?(375|8-?0)-?(25|44|33|17|29)-?[1-9]\d{2}(-?\d{2}){2}$/;
 	return reg.test(number);
 }
 console.log(validNamber(userPhoneNamber1));
@@ -29,20 +29,4 @@ function volwesCount(word) {
 	});
 	return count;
 }
-console.log(`количество гласных букв в слове = ${volwesCount(anyWords)}`);
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Задание 3:
-// Переписать решение задачи с поиском гласных с использованием регулярного выражения. Протестировать ситуацию, когда
-// гласных в переданном тексте будет 0. По возможности придумать несколько вариантов решения.
+console.log('количество гласных букв в слове = ' + volwesCount(anyWords));
