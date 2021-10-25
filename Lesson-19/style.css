@@ -1,0 +1,41 @@
+#wrap {
+	margin:0 auto;
+	background-color:beige;
+	width: 200px;
+	min-height: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	
+}
+#timer{
+	display: flex;
+	justify-content: space-around;
+	margin: 20px 0;
+}
+
+#timer div{
+	width: 60px;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	border:black solid 2px;
+	border-radius: 5px;
+}
+span{
+	font-size: 32px;
+	font-weight: bold;
+}
+
+button{
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+ol{
+	margin: 0;
+}
+li{
+	padding-top: 5px;
+}
