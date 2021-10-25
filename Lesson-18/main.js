@@ -1,3 +1,4 @@
+
 'use strict';
 // Задание 1:
 var userEmail = 'name_surname-1234@gmail.com';
